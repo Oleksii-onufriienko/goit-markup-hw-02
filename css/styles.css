@@ -1,0 +1,74 @@
+/* #757575 основной цвет текста обзацев  */
+/* #212121 основной зоголовков */
+/* #2196F3 цвет выделения */
+/* #F5F5F5; основной цвет фона  */
+/* #F5F4FA вторичный цвет фона */
+/* #FFFFFF цвет фона хэдера */
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --select-text-color: #2196F3;
+    --button-text-color: #FFFFFF;
+    --button-color: #2196F3;
+
+}
+
+.page{
+    color: var(--primary-text-color);
+    background-color: #F5F5F5;
+}
+
+/* ЛОГО */
+.logo{
+color: var(--title-text-color);
+}
+
+.logo-first{
+    color: var(--select-text-color) 
+ }
+
+
+.list{
+    list-style: none;
+}
+
+/* Header та навігація */
+.page-header {
+    color: var(--title-text-color);
+}
+
+.site-nav .link{
+    color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus{
+    color: var(--select-text-color);
+}
+
+.site-nav .link.current{
+    color: var(--select-text-color);
+}
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--select-text-color);
+}
+/* Герой */
+.hero{
+    color:black
+}
+
+/* Секція  */
+.section h1,h2,h3{
+    color: var(--title-text-color);
+}
+
+/* Button */
+.button{
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+}

@@ -10,14 +10,22 @@
     --select-text-color: #2196F3;
     --button-text-color: #FFFFFF;
     --button-color: #2196F3;
+    --addr-color-tel-mail: rgba(255, 255, 255, 0.6);
+    --addr-color-city: #FFFFFF;
 
 }
 
+.list {
+    list-style: none;
+}
 .page{
     color: var(--primary-text-color);
     background-color: #F5F5F5;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+}
+.page a {
+    text-decoration: none;
 }
 
 /* ЛОГО */
@@ -33,10 +41,6 @@
     color: var(--select-text-color) 
  }
 
-
-.list{
-    list-style: none;
-}
 
 /* Header та навігація */
 .page-header {
@@ -125,31 +129,66 @@
     line-height: 1.2;
 }
 /* FOOTER */
-.footer{
+.list .addr-mail-tel{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--addr-color-tel-mail);
+    background: #2F303A;
+}
 
+.list .addr-mail-tel:hover,
+.list .addr-mail-tel:focus {
+    color: var(--select-text-color);
+}
+.list .addr-city{
+    font-style: normal;
+    color: var(--addr-color-city);
+    background: #2F303A;
+}
+.list .addr-city:hover,
+.list .addr-city:focus {
+    color: var(--select-text-color);
 }
 
 /* Button */
 .button-hero {
     color: var(--button-text-color);
     background-color: var(--button-color);
-     font-size: 16px;
+    font-size: 16px;
     font-weight: 700;
-    /* identical to box height, or 188% */
+    text-align: center;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button{
     color: var(--button-text-color);
+    font-weight: 500;
     background-color: var(--button-color);
-
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
 /* Картки портфоліо */
-.pcard{
+ .card{ 
     color: var(--primary-text-color);
 }
-.pcard h2{
+
+.card .card-header{
     color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;  
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+.card .card-text{
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 400;
 }

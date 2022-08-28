@@ -4,14 +4,21 @@
 /* #F5F5F5; основной цвет фона  */
 /* #F5F4FA вторичный цвет фона */
 /* #FFFFFF цвет фона хэдера */
+/* #2F303A колір футера */
+/* #F5F4FA колір bg кпопок */
+/*  */
 :root{
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --select-text-color: #2196F3;
-    --button-text-color: #FFFFFF;
-    --button-color: #2196F3;
     --addr-color-tel-mail: rgba(255, 255, 255, 0.6);
     --addr-color-city: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    --second-color-logo-footer: #FFFFFF;
+    --button-bg-color: #F5F4FA;
+    --button-text-color: #212121;
+    --button-select-color: #2196F3;
+    --button-select-text-color: #FFFFFF;
 
 }
 
@@ -41,6 +48,9 @@
     color: var(--select-text-color) 
  }
 
+.footer .logo{
+    color: var(--second-color-logo-footer);
+}
 
 /* Header та навігація */
 .page-header {
@@ -129,13 +139,15 @@
     line-height: 1.2;
 }
 /* FOOTER */
+.footer{
+    background-color: var(--footer-bg-color);
+}
 .list .addr-mail-tel{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--addr-color-tel-mail);
-    background: #2F303A;
 }
 
 .list .addr-mail-tel:hover,
@@ -153,9 +165,9 @@
 }
 
 /* Button */
-.button-hero {
-    color: var(--button-text-color);
-    background-color: var(--button-color);
+.hero .button-hero {
+    color: var(--button-select-text-color);
+    background-color: var(--button-select-color);
     font-size: 16px;
     font-weight: 700;
     text-align: center;
@@ -165,14 +177,17 @@
 }
 
 .button{
-    color: var(--button-text-color);
     font-weight: 500;
-    background-color: var(--button-color);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    cursor: pointer;
+}
+
+.button:hover,
+.bitton:focus{
+    color: var(--button-select-text-color);
+    background-color: var(--button-select-color);
 }
 
 /* Картки портфоліо */

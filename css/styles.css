@@ -185,7 +185,7 @@
 }
 
 .button:hover,
-.bitton:focus{
+.button:focus{
     color: var(--button-select-text-color);
     background-color: var(--button-select-color);
 }
